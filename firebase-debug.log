@@ -1,0 +1,38 @@
+[debug] [2022-01-03T11:40:31.506Z] ----------------------------------------------------------------------
+[debug] [2022-01-03T11:40:31.506Z] Command:       /Users/colinchiu/.nvm/versions/node/v16.13.0/bin/node /Users/colinchiu/.nvm/versions/node/v16.13.0/bin/firebase serve
+[debug] [2022-01-03T11:40:31.507Z] CLI Version:   9.23.0
+[debug] [2022-01-03T11:40:31.507Z] Platform:      darwin
+[debug] [2022-01-03T11:40:31.507Z] Node Version:  v16.13.0
+[debug] [2022-01-03T11:40:31.508Z] Time:          Mon Jan 03 2022 19:40:31 GMT+0800 (台北標準時間)
+[debug] [2022-01-03T11:40:31.508Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-03T11:40:31.544Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-03T11:40:31.545Z] > authorizing via signed-in user (colin.chiu87@gmail.com)
+[debug] [2022-01-03T11:40:31.545Z] [iam] checking project friendlychat-9d087 for permissions ["firebase.projects.get"]
+[debug] [2022-01-03T11:40:31.546Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-01-03T11:40:31.546Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-03T11:40:31.655Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 03 Jan 2022 11:40:31 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-03T11:40:31.680Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/friendlychat-9d087:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2022-01-03T11:40:31.892Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 03 Jan 2022 11:40:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=150","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-03T11:40:31.893Z] > refreshing access token with scopes: []
+[debug] [2022-01-03T11:40:31.893Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-03T11:40:31.969Z] <<< HTTP RESPONSE 200 {"date":"Mon, 03 Jan 2022 11:40:32 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-03T11:40:32.014Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-9d087 [none]
+[debug] [2022-01-03T11:40:32.652Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-9d087 200
+[debug] [2022-01-03T11:40:32.652Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-9d087 {"projectId":"friendlychat-9d087","projectNumber":"944625987520","displayName":"FriendlyChat","name":"projects/friendlychat-9d087","resources":{"hostingSite":"friendlychat-9d087","storageBucket":"friendlychat-9d087.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from '/Users/colinchiu/Documents/codelab-friendlychat-web/web-start'...
+[info] 
+[debug] [2022-01-03T11:40:32.653Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/friendlychat-9d087/sites 
+[debug] [2022-01-03T11:40:33.781Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/friendlychat-9d087/sites 200
+[debug] [2022-01-03T11:40:33.781Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/friendlychat-9d087/sites {"sites":[{"name":"projects/944625987520/sites/friendlychat-9d087","defaultUrl":"https://friendlychat-9d087.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-01-03T11:40:33.782Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-9d087/webApps/-/config [none]
+[debug] [2022-01-03T11:40:35.321Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-9d087/webApps/-/config 200
+[debug] [2022-01-03T11:40:35.321Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/friendlychat-9d087/webApps/-/config {"projectId":"friendlychat-9d087","appId":"1:944625987520:web:592dac7b9763b04be42225","storageBucket":"friendlychat-9d087.appspot.com","locationId":"us-central","apiKey":"AIzaSyBbuehWMBOkk_wWzet95h0MoNQoS8xWEWk","authDomain":"friendlychat-9d087.firebaseapp.com","messagingSenderId":"944625987520"}
+[info] i  hosting: Serving hosting files from: ./public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1m./public\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [03/Jan/2022:11:40:40 +0000] "GET / HTTP/1.1" 200 5816 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [03/Jan/2022:11:40:40 +0000] \"GET / HTTP/1.1\" 200 5816 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [03/Jan/2022:11:40:40 +0000] "GET /scripts/main.js HTTP/1.1" 200 4064035 "http://localhost:5000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [03/Jan/2022:11:40:40 +0000] \"GET /scripts/main.js HTTP/1.1\" 200 4064035 \"http://localhost:5000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36\""}}
